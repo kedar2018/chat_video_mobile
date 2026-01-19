@@ -8,6 +8,11 @@
     "scheme": "chatvideomobile",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+"doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": ["react-native-webrtc"]
+      }
+    },
     "ios": {
       "supportsTablet": true
     },
@@ -18,8 +23,15 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS",
+        "INTERNET"
+      ],
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.kedar1811.chatvideomobile"
     },
     "web": {
       "output": "static",
@@ -43,6 +55,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b1c916b4-be67-4041-a9ac-5ca1fed92bb0"
+      }
     }
   }
 }

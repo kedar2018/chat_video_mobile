@@ -1,0 +1,13 @@
+{
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": { "NODE_ENV": "development" }
+    },
+    "production": {
+      "distribution": "internal",
+      "env": { "NODE_ENV": "production" }
+    }
+  }
+}
